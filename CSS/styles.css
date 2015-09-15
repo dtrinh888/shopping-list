@@ -1,21 +1,30 @@
 body {
-	background-color: gray;
+	background-color: white;
+	font-family: sans-serif;
+	text-align: center;
 }
 
 #container {
 	width:100%;
 	margin: 0 auto;
-	background-color: white
+	background-color: white;
+
 }
 
 .nav-bar {
-
-	background-color: white;
+	background-color: black;
 	width: 100%;
-	border-bottom: 1px solid black;
 	height: 4.375rem;
 	z-index: 99999;
 	margin: auto;
+	/*position: fixed;*/
+
+}
+
+.nav-bar h1{
+	padding-top: 20px;
+	color: white;
+	font-weight: 300;
 }
 
 .shop-list {
@@ -23,8 +32,37 @@ body {
 	height: 45rem;
 	background-color: white;
 	text-align: center;
+	background-image: url("http://standpointgroup.com/wp/wp-content/uploads/2014/04/Shopping-Cart-ShutterStock.jpg");
+	background-size: 125rem;
+	background-repeat: no-repeat;
+
 }
 
-.shop-list input{
+.add-item{
+	padding-top: 20px;
+}
+
+.add-item input{
 	width: 200px;
+}
+
+.item-list {
+	color: white;
+	width: 315px;
+	height: 300px;
+	border: 1px solid #d3d3d3;
+	margin: 10px auto;
+	background-color:rgba(255,0,0,0.2);
+	border-radius: 15%;	
+	font-weight: 300;
+}
+
+.item-list h2{
+	font-weight: 300;
+}
+
+.item-list ul {
+	list-style-type: none;
+	text-align: center;
+	display: inline;
 }
