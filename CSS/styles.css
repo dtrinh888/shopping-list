@@ -132,8 +132,12 @@ body {
 .check-list {
 	width: 300px;
 }
+
 .check-list ul {
 	display: inline;
 	
 }
-/*test*/
+
+#select-all {
+	color: blue;
+}
