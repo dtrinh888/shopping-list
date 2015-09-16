@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -15,21 +17,17 @@
 
 		<section class="shop-list">
 			<div class="add-item">
-				<input type='text' placeholder="Enter item to shopping list..."></input>
-				<button class="btn">Add Item</button>
+				<input id="item-add" type='text' placeholder="Enter item to shopping list..." name="itemAdd"></input>
+				<button class="add-btn">Add Item</button>
 			</div>
 			<div class="item-list">
 				<H2>Shopping List</H2>
-				<ul>
-					<li><input type="checkbox">Item 1</li>
-					<li><input type="checkbox">Item 2</li>
-					<li><input type="checkbox">Item 3</li>
-					<li><input type="checkbox">Item 4</li>
-					<li><input type="checkbox">Item 5</li>
+				<ul class="check-list">
+					
 				</ul>
 			</div>	
 			<div class="removal">
-				<button class="btn">Remove Selected</button>
+				<button class="rem-btn">Remove Selected</button>
 			</div>
 		</section>
 
