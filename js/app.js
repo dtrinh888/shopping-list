@@ -2,7 +2,15 @@ $(document).ready(function(){
 
     $(".add-btn").click(function (){
 		var addItem = $('#item-add').val();
-		$(".check-list").append('<li><input type="checkbox" class="check-box">' + addItem + '</li>');
+
+		if (addItem == "") {			
+			alert("You must enter an item to add to list.")
+			$(".check-list").append('<li><input type="checkbox" class="blank-box">' + addItem + '</li>');
+			$('.blank-box').remove();
+		} else {
+			$(".check-list").append('<li><input type="checkbox" class="check-box">' + addItem + '</li>');
+		};
+
 		$("#item-add").val('');
 	});
 
@@ -10,10 +18,16 @@ $(document).ready(function(){
 		var press = enter.which;
 		var addItem = $('#item-add').val();
 		if(press == 13) {
+			if (addItem == "") {			
+			alert("You must enter an item to add to list.")
+			$(".check-list").append('<li><input type="checkbox" class="blank-box">' + addItem + '</li>');
+			$('.blank-box').remove();
+		} else {
 			$(".check-list").append('<li><input type="checkbox" class="check-box">' + addItem + '</li>');
+		};
 			$("#item-add").val('');
 		} 
-	})
+	});
 
 	$('#select-all').change(function(){
 		$('.check-box').prop('checked', $(this).prop('checked'));
