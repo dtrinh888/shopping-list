@@ -20,10 +20,8 @@ $(document).ready(function(){
 	$(".rem-btn").click(function(){
 		var remConf = confirm("Are you sure you want to remove these items from your shopping list?");
 		if (remConf == true) {
-			$(".check-list input:checked").not('#select-all').parent().remove();	
+			$(".check-list input:checked").not('#select-all').parent().remove();
+			$('#select-all').prop('checked', false);	
 		};
 	});
-
-	
-
 });
