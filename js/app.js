@@ -3,6 +3,7 @@ $(document).ready(function(){
     $(".add-btn").click(function (){
 		var addItem = $('#item-add').val();
 		$(".check-list").append('<li><input type="checkbox" class="check-box">' + addItem + '</li>');
+		$("#item-add").val('');
 	});
 
 	$("#item-add").keypress(function (enter){
@@ -10,6 +11,7 @@ $(document).ready(function(){
 		var addItem = $('#item-add').val();
 		if(press == 13) {
 			$(".check-list").append('<li><input type="checkbox" class="check-box">' + addItem + '</li>');
+			$("#item-add").val('');
 		} 
 	})
 
