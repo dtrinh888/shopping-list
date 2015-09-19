@@ -77,6 +77,14 @@ body {
 	width:100%;
 	margin: 0 auto;
 	background-color: white;
+	text-align: center;
+	background-image: url("http://standpointgroup.com/wp/wp-content/uploads/2014/04/Shopping-Cart-ShutterStock.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
 
 }
 
@@ -98,7 +106,7 @@ body {
 }
 
 
-.shop-list {
+/*.shop-list {
 	width: 100%;
 	background-color: white;
 	text-align: center;
@@ -110,7 +118,7 @@ body {
 	-moz-background-size:cover;
 	-o-background-size:cover;
 
-}
+}*/
 
 .add-item{
 	padding-top: 20px;
