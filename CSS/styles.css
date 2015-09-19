@@ -100,9 +100,12 @@ body {
 	background-color: white;
 	text-align: center;
 	background-image: url("http://standpointgroup.com/wp/wp-content/uploads/2014/04/Shopping-Cart-ShutterStock.jpg");
-	background-size: contain;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
 
 }
 
