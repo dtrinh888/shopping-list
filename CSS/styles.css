@@ -2,9 +2,14 @@ body {
 	background-color: black;
 	font-family: sans-serif;
 	text-align: center;
+
 }
 
 @media only screen and (max-width: 500px) {
+	body{
+		width: 100%;
+	  	height: 300px;
+	}
 	.nav-bar {
 		padding: 0;
 	}
