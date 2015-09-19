@@ -3,13 +3,11 @@ $(document).ready(function(){
     $(".add-btn").click(function (){
 		var addItem = $('#item-add').val();
 
-		if (addItem == "") {			
-			alert("You must enter an item to add to list.")
-			$(".check-list").append('<li><input type="checkbox" class="blank-box">' + addItem + '</li>');
-			$('.blank-box').remove();
-		} else {
-			$(".check-list").append('<li><input type="checkbox" class="check-box">' + addItem + '</li>');
-		};
+		if (addItem != "") {
+           $(".check-list").append('<li><input type="checkbox" class="check-box">' + addItem + '</li>');
+        } else {
+            alert("You must enter an item to add to list.")
+        };
 
 		$("#item-add").val('');
 	});
@@ -18,13 +16,11 @@ $(document).ready(function(){
 		var press = enter.which;
 		var addItem = $('#item-add').val();
 		if(press == 13) {
-			if (addItem == "") {			
-			alert("You must enter an item to add to list.")
-			$(".check-list").append('<li><input type="checkbox" class="blank-box">' + addItem + '</li>');
-			$('.blank-box').remove();
-		} else {
-			$(".check-list").append('<li><input type="checkbox" class="check-box">' + addItem + '</li>');
-		};
+		if (addItem != "") {
+           $(".check-list").append('<li><input type="checkbox" class="check-box">' + addItem + '</li>');
+        } else {
+            alert("You must enter an item to add to list.")
+        };
 			$("#item-add").val('');
 		} 
 	});

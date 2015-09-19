@@ -4,6 +4,16 @@ body {
 	text-align: center;
 }
 
+@media only screen and (max-width: 500px) {
+	#container {
+		padding: 3em 0;
+	}
+	.title {
+		font-size: 1em;
+		color: yellow;
+	}
+}
+
 .add-btn {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
@@ -141,6 +151,6 @@ body {
 	
 }
 
-#select-all {
+.check-list > #select-all{
 	color: blue;
 }
