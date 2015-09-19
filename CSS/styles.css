@@ -5,12 +5,12 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-	#container {
-		padding: 3em 0;
+	.nav-bar {
+		padding: 0;
 	}
 	.title {
-		font-size: 1em;
-		color: yellow;
+		font-size: 16px;
+		color: green;
 	}
 }
 
@@ -100,8 +100,9 @@ body {
 	background-color: white;
 	text-align: center;
 	background-image: url("http://standpointgroup.com/wp/wp-content/uploads/2014/04/Shopping-Cart-ShutterStock.jpg");
-	background-size: 125rem;
+	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: center;
 
 }
 
